@@ -1,0 +1,39 @@
+@import "variables";
+
+/* Common color class names used by bootstrap in a list */
+// $b-classes: (
+//   "primary": $primary,
+//   "secondary": map-get($primary-c, "400"),
+//   "success": map-get($alert-success, "400"),
+//   "warning": map-get($alert-warning, "400"),
+//   "danger": map-get($alert-danger, "400"),
+//   "info": map-get($secondary-c, "400"),
+//   "dark": map-get($text-dark, "500"),
+//   "light": map-get($text-light, "400"),
+//   "muted": map-get($text-dark, "900"),
+//   "white": map-get($text-light, "900")
+// );
+
+/* Bootstrap Text and BG color classes will be generated here */
+// @each $class, $value in $b-classes {
+//   .text-#{$class} {
+//     color: $value !important;
+//   }
+//   .bg-#{$class} {
+//     background-color: $value !important;
+//   }
+// }
+
+/* Bootstrap Shadow classes */
+// .shadow-none {
+//   box-shadow: none !important;
+// }
+// .shadow-sm {
+//   box-shadow: $shadow-small !important;
+// }
+// .shadow {
+//   box-shadow: $shadow-medium !important;
+// }
+// .shadow-lg {
+//   box-shadow: $shadow-large !important;
+// }

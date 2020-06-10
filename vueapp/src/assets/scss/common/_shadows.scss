@@ -1,0 +1,13 @@
+/* Shadow variations */
+$shadow-none: none;
+$shadow-small: 0 1px 4px rgba(0, 0, 0, 0.15);
+$shadow-medium: 0px 8px 16px rgba(0, 0, 0, 0.16);
+$shadow-large: 0 0 20px rgba(0, 0, 0, 0.005),
+  0 20px 30px -19px rgba(0, 0, 0, 0.21);
+
+:export {
+  shadowNone: $shadow-none;
+  shadowSmall: $shadow-small;
+  shadowMedium: $shadow-medium;
+  shadowLarge: $shadow-large;
+}

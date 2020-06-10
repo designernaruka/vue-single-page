@@ -1,0 +1,90 @@
+// $tooltip-arrow-size-default:.625rem; // TODO standardize notch size; approx 10px
+// $tooltip-color-default: map-get($text-dark, "600");
+// $tooltip-max-width-default: 130%; // TODO standardize how wide tooltip should be wrt element being tipped
+// @mixin tooltip-vertical-init($arrow-size: $tooltip-arrow-size-default, $color: $tooltip-color-default) {
+//   box-sizing: content-box;
+//   --scale: 0;
+//   --arrow-size: #{$arrow-size};
+//   --tooltip-bottom-color: #{$color};
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+//   transition: 150ms transform;
+// }
+
+// @mixin tooltip-box($max-width: $tooltip-max-width-default) {
+//   color: white;
+//   padding: .25rem .5em;
+//   border-radius: .3rem;
+//   text-align: center;
+//   width: max-content;
+//   max-width: #{$max-width};
+//   background: var(--tooltip-bottom-color);
+// }
+
+// @mixin tooltip-notch() {
+//   content: '';
+//   border: var(--arrow-size) solid transparent;
+// }
+
+// *[data-tooltip-bottom]::before,
+// *[data-tooltip-bottom]::after {
+//   @include tooltip-vertical-init();
+//   transform-origin: top center;
+// }
+
+// *[data-tooltip-bottom]::before {
+//   @include tooltip-box();
+//   content: attr(data-tooltip-bottom);
+//   top: 100%;
+//   --translate-y: calc(var(--arrow-size));
+// }
+
+// *[data-tooltip-bottom]::after {
+//   @include tooltip-notch();
+//   border-bottom-color: var(--tooltip-bottom-color);
+//   top: 100%;
+//   --translate-y: calc(-1 * var(--arrow-size));
+//   transform-origin: bottom center;
+// }
+
+// *[data-tooltip-bottom]:hover::before,
+// *[data-tooltip-bottom]:hover::after {
+//   --scale: 1;
+// }
+
+
+// *[data-tooltip-top]::before,
+// *[data-tooltip-top]::after {
+//   @include tooltip-vertical-init();
+//   transform-origin: bottom center;
+// }
+
+// *[data-tooltip-top]::before {
+//   @include tooltip-box();
+//   top: 0;
+//   --translate-y: calc(-100% - var(--arrow-size));
+//   content: attr(data-tooltip-top);
+// }
+
+// *[data-tooltip-top]::after {
+//   @include tooltip-notch();
+//   border-top-color: var(--tooltip-color);
+//   top: 0;
+//   --translate-y: calc(-1 * var(--arrow-size));
+//   transform-origin: top center;
+// }
+
+// *[data-tooltip-top]:hover::before,
+// *[data-tooltip-top]:hover::after {
+//   --scale: 1;
+//   z-index: 1;
+// }
+
+// *[data-tooltip-top] {
+//   position: relative;
+// }
+
+// *[data-tooltip-bottom] {
+//   position: relative;
+// }

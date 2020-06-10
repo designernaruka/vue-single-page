@@ -1,0 +1,31 @@
+@import "colors";
+@import "shadows";
+@import "spacing";
+@import "fonts";
+@import "mixins";
+
+/* Primary brand orange color */
+// $primary: map-get($punchh-orange, "500");
+
+/* Button background colors */
+// $primary-btn-default: map-get($primary-b, "400");
+// $primary-btn-hover: map-get($primary-b, "500");
+// $primary-btn-disabled: map-get($primary-b, "800");
+
+// $secondary-btn-default: map-get($text-light, "900");
+// $secondary-btn-hover: map-get($primary-b, "400");
+// $secondary-btn-disabled: map-get($text-light, "900");
+
+// $delete-btn-default: map-get($alert-danger, "400");
+// $delete-btn-hover: map-get($alert-danger, "500");
+// $delete-btn-disabled: map-get($alert-danger, "700");
+
+/* Page Background color */
+// $bg-main: map-get($text-light, "800");
+
+/* Matches bootstrap default; use in widgets & components */
+// $z-index-modal: 1050; /* matches bootstrap default */
+// $z-index-modal-1: 2050;
+// $z-index-modal-2: 3050;
+// $z-index-modal-3: 4050;
+// $z-index-max: 1000000;

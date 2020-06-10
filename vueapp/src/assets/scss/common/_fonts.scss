@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Common fonts used in design system */
+$primary-font: 'Roboto Condensed', sans-serif;
+
+$font-weights: (
+  "normal": 200,
+  "medium": 500,
+  "bold": 600,
+  "bolder": 700
+);
+
+// Mixin for generating sass code for font-family with font-weight.
+// Usage in sass file: @include fonts($primary-font, map-get($font-weights,"normal"));
+// Available weight values: Nunito(400,600,700) & Rubik(400,500,700).
+@mixin fonts($font, $weight) {
+  font-family: $font, sans-serif;
+  font-weight: $weight;
+}
+
+:export {
+  primary: $primary-font;
+  normal: map-get($font-weights, "normal");
+  medium: map-get($font-weights, "medium");
+  bold: map-get($font-weights, "bold");
+  bolder: map-get($font-weights, "bolder");
+}
